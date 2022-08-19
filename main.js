@@ -9,13 +9,13 @@ document.getElementById( "date").innerHTML = d.toLocaleDateString();
 
 
 // API key //
-var APIKey = "96a76e81a5d9dd067bbf02bfb0127a67";
+var APIKey = "cad7ec124945dcfff04e457e76760d90";
 
 document.getElementById("selectCity").addEventListener("change", function () {
   //  fetch Api//
   city = document.querySelector("#selectCity").value;
   fetch(
-    `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=96a76e81a5d9dd067bbf02bfb0127a67&units=metric`
+    `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=cad7ec124945dcfff04e457e76760d90&units=metric`
   )
     .then((response) => {
       return response.json();
